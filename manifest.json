@@ -1,0 +1,140 @@
+{
+	"manifest_version": 2,
+
+	"name": "WHV",
+	"description": "WHV",
+	"version": "1.0",
+
+	"permissions": [
+		"storage"
+	],
+
+	"browser_action": {
+//        "default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+
+	"options_page": "options.html",
+
+	"content_scripts": [/*{
+		"matches": [
+			"http://www.immigration.govt.nz/migrant/default.htm"
+		],
+		"js": [
+			"util.js",
+			"home.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/secure/default.htm"
+		],
+		"js": [
+			"util.js",
+			"visaselect.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/secure/Login+Working+Holiday.htm"
+		],
+		"js": [
+			"util.js",
+			"login.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Application/Create.aspx?CountryId=*"
+		],
+		"js": [
+			"util.js",
+			"available.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Wizard/Personal1.aspx?ApplicationId=*&IndividualType=Primary&IndividualIndex=1"
+		],
+		"js": [
+			"util.js",
+			"form_personal1.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Wizard/Personal2.aspx?ApplicationId=*&IndividualType=Primary&IndividualIndex=1"
+		],
+		"js": [
+			"util.js",
+			"form_personal2.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Wizard/Personal3.aspx?ApplicationId=*&IndividualType=Primary&IndividualIndex=1"
+		],
+		"js": [
+			"util.js",
+			"form_personal3.js"
+		]
+	}, {
+		"matches", [
+			"https://www.immigration.govt.nz/WorkingHoliday/Wizard/Medical1.aspx?ApplicationId=*&IndividualType=Primary&IndividualIndex=1"
+		],
+		"js": [
+			"util.js",
+			"form_health.js"
+		]
+	}, {
+		"matches", [
+			"https://www.immigration.govt.nz/WorkingHoliday/Wizard/Character.aspx?ApplicationId=*&IndividualType=Primary&IndividualIndex=1"
+		],
+		"js": [
+			"util.js",
+			"form_charactor.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Wizard/WorkingHolidaySpecific.aspx?ApplicationId=*&IndividualType=Primary&IndividualIndex=1"
+		],
+		"js": [
+			"util.js",
+			"form_whspecific.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Application/Submit.aspx?ApplicationId=*"
+		],
+		"js": [
+			"util.js",
+			"form_submit.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/WorkingHoliday/Application/Pay.aspx?ApplicationId=*"
+		],
+		"js": [
+			"util.js",
+			"pay.js"
+		]
+	}, {
+		"matches": [
+			"https://www.immigration.govt.nz/PaymentGateway/OnLinePayment.aspx?SourceUrl=https://www.immigration.govt.nz/WorkingHoliday/Application/SubmitConfirmation.aspx?ApplicationId=*"
+		],
+		"js": [
+			"util.js",
+			"onlinepay.js"
+		]
+	}, {
+		"matches": [
+			"https://webcomm.paymark.co.nz/hosted/?hk=*"
+		],
+		"js": [
+			"util.js",
+			"creditcardtype.js"
+		]
+	}, {
+		"matches": [
+			"https://webcomm.paymark.co.nz/hosted/?rm=*"
+		],
+		"js": [
+			"util.js",
+			"paynow.js"
+		]
+	}*/]
+}

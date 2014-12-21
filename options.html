@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="options.css">
+	<script type='text/javascript' src='options.js'></script>
+</head>
+<body>
+	<div>
+		<table class="whv-options" border="0" cellspacing="0">
+			<tbody><tr>
+				<td class="whv-option">Login Username</td>
+				<td class="whv-option-value">
+					<input type="text" id="loginname" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Login Password</td>
+				<td class="whv-option-value">
+					<input type="password" id="loginpwd"/>
+				</td>
+			</tr><tr>
+				<td class="whv-option">Country</td>
+				<td class="whv-option-value">
+					<select id="country">
+						<option value="13">Argentina</option>
+						<option value="17">Austria</option>
+						<option value="24">Belgium</option>
+						<option value="32">Brazil</option>
+						<option value="40">Canada</option>
+						<option value="45">Chile</option>
+						<option value="46">China</option>
+						<option value="54">Croatia</option>
+						<option value="57">Czech Republic</option>
+						<option value="59">Denmark</option>
+						<option value="69">Estonia</option>
+						<option value="75">Finland</option>
+						<option value="76">France</option>
+						<option value="82">Germany</option>
+						<option value="97">Hong Kong SAR</option>
+						<option value="98">Hungary</option>
+						<option value="104">Ireland</option>
+						<option value="105">Israel</option>
+						<option value="106">Italy</option>
+						<option value="109">Japan</option>
+						<option value="118">Latvia</option>
+						<option value="130">Malaysia</option>
+						<option value="133">Malta</option>
+						<option value="139">Mexico</option>
+						<option value="150">Netherlands</option>
+						<option value="161">Norway</option>
+						<option value="170">Peru</option>
+						<option value="171">Philippines</option>
+						<option value="173">Poland</option>
+						<option value="188">Singapore</option>
+						<option value="189">Slovakia</option>
+						<option value="190">Slovenia</option>
+						<option value="194">South Korea</option>
+						<option value="197">Spain</option>
+						<option value="208">Sweden</option>
+						<option value="211">Taiwan</option>
+						<option value="214" selected>Thailand</option>
+						<option value="222">Turkey</option>
+						<option value="85">United Kingdom</option>
+						<option value="229">United States of America</option>
+						<option value="230">Uruguay</option>
+						<option value="237">Vietnam</option>
+					</select>
+				</td>
+			</tr><tr>
+				<td class="whv-option">Family Name</td>
+				<td class="whv-option-value">
+					<input type="text" id="familyname" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Given Name</td>
+				<td class="whv-option-value">
+					<input type="text" id="givenname" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Gender</td>
+				<td class="whv-option-value">
+					<select id="gender">
+						<option value="F" selected>Female</option>
+						<option value="M">Male</option>
+					</select>
+				</td>
+			</tr><tr>
+				<td class="whv-option">Date of birth</td>
+				<td class="whv-option-value">
+					<input type="text" id="birthday" data-type="date" placeholder="1984/12/21" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Street Name</td>
+				<td class="whv-option-value">
+					<input type="text" id="streetname" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">City</td>
+				<td class="whv-option-value">
+					<input type="text" id="city" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Email</td>
+				<td class="whv-option-value">
+					<input type="text" id="email" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Passport Number</td>
+				<td class="whv-option-value">
+					<input type="text" id="passportnumber" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Passport Expire Date</td>
+				<td class="whv-option-value">
+					<input type="text" id="passportexpire" data-type="date" placeholder="2020/1/1"/>
+				</td>
+			</tr><tr>
+				<td class="whv-option">ID Card Issue Date</td>
+				<td class="whv-option-value">
+					<input type="text" id="idcarddate" data-type="date" placeholder="2014/10/1" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Date intended to travel to NZ</td>
+				<td class="whv-option-value">
+					<input type="text" id="traveldate" data-type="date" placeholder="2015/7/1" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Creditcard Payer Name</td>
+				<td class="whv-option-value">
+					<input type="text" id="payername" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Creditcard Type</td>
+				<td class="whv-option-value">
+					<select id="cardtype">
+						<option value="master">Master</option>
+						<option value="visa">Visa</option>
+					</select>
+				</td>
+			</tr><tr>
+				<td class="whv-option">Creditcard Number</td>
+				<td class="whv-option-value">
+					<input type="text" id="creditcardnumber" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Creditcard Security Code</td>
+				<td class="whv-option-value">
+					<input type="text" id="creditcardcode" />
+				</td>
+			</tr><tr>
+				<td class="whv-option">Creditcard Expire Date</td>
+				<td class="whv-option-value">
+					<input type="text" id="creditcardexpire" data-type="date" placeholder="2020/1/1"/>
+				</td>
+			</tr><tr>
+				<td colspan="2" style="text-align: center; ">
+					<button id="savebtn">Save</button>
+					<button id="samplebtn">Sample</button>
+					<button id="clearbtn">Clear</button>
+				</td>
+			</tr></tbody>
+		</table>
+	</div>
+</body>
+</html>
