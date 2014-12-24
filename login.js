@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 	alert('login');
 	chrome.runtime.sendMessage('whvcontext', function(response){
 		var userNameInput = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_userNameTextBox");
@@ -10,4 +10,4 @@
 
 		fireEvent(loginBtn, 'click');
 	});
-})();
+});

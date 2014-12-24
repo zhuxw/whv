@@ -13,5 +13,13 @@ function fireEvent(element, event){
 	}
 }
 
-function trySubmit(){};
+function autoLoad(callback){
+	chrome.storage.sync.get({
+		enableWhv: false
+	}, function(args){
+		if(args.enableWhv){
+			callback();
+		}
+	});
+}
 

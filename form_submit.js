@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 	var c1 = document.getElement("ctl00_ContentPlaceHolder1_falseStatementCheckBox");
 	var c2 = document.getElement("ctl00_ContentPlaceHolder1_notesCheckBox");
 	var c3 = document.getElement("ctl00_ContentPlaceHolder1_circumstancesCheckBox");
@@ -13,4 +13,4 @@
 
 	var submitButton = document.getElement("ctl00_ContentPlaceHolder1_submitImageButton");
 	fireEvent(submitButton, 'click');
-})();
+});

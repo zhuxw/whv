@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 	var passportNumberInput = document.getElementById("ctl00_ContentPlaceHolder1_identification_passportNumberTextBox");
 	var passportNumberConfirmInput = document.getElementById("ctl00_ContentPlaceHolder1_identification_confirmPassportNumberTextBox");
 	var passportExpireDateSelect = document.getElementById("ctl00_ContentPlaceHolder1_identification_passportExpiryDateDatePicker_Day");
@@ -16,4 +16,4 @@
 
 	var nextButton = document.getElementById("ctl00_ContentPlaceHolder1_wizardPageFooter_wizardPageNavigator_nextImageButton");
 
-})();
+});

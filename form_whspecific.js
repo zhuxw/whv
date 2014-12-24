@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 	var previousWhsPermitSelect = document.getElementById("ctl00_ContentPlaceHolder1_offshoreDetails_commonWHSQuestions_previousWhsPermitVisaDropDownList");
 	var sufficientFundsHolidaySelect = document.getElementById("ctl00_ContentPlaceHolder1_offshoreDetails_commonWHSQuestions_sufficientFundsHolidayDropDownList");
 
@@ -23,4 +23,4 @@
 	if(submitButton){
 		fireEvent(submitButton, 'click');
 	}
-})();
+});

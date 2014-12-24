@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 
 	var renalDialysisSelect = document.getElementById("ctl00_ContentPlaceHolder1_medicalConditions_renalDialysisDropDownList");
 	var hasTBSelect = document.getElementById("ctl00_ContentPlaceHolder1_medicalConditions_tuberculosisDropDownList");
@@ -13,4 +13,4 @@
 
 	var nextButton = document.getElementById("ctl00_ContentPlaceHolder1_wizardPageFooter_wizardPageNavigator_nextImageButton");
 
-})();
+});

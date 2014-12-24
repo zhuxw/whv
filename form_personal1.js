@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 	var genderSelect = document.getElementById("ctl00_ContentPlaceHolder1_personDetails_genderDropDownList");
 	genderSelect.value = "F";
 	var birthDateSelect = document.getElementById("ctl00_ContentPlaceHolder1_personDetails_dateOfBithDatePicker_Day");
@@ -20,4 +20,4 @@
 	var hasCreditCardSelect = document.getElementById("ctl00_ContentPlaceHolder1_hasCreditCard_hasCreditCardDropDownlist");
 
 
-})();
+});

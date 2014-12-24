@@ -1,4 +1,4 @@
-(function(){
+autoLoad(function(){
 	var imprison5YearsSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_imprisonment5YearsDropDownList");
 	var imprison12YearsSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_imprisonment12MonthsDropDownList");
 	var removalOrderSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_removalOrderDropDownList");
@@ -12,4 +12,4 @@
 
 	var nextButton = document.getElementById("ctl00_ContentPlaceHolder1_wizardPageFooter_wizardPageNavigator_nextImageButton");
 	fireEvent(nextButton, 'click');
-})();
+});

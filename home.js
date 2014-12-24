@@ -1,6 +1,5 @@
-(function(){
+autoLoad(function(){
 	alert('home');
-
 	var loginBtn = document.getElementById('SecureLoginPage');
 	loginBtn = loginBtn.querySelector('img');
 	fireEvent(loginBtn, 'click');
@@ -11,5 +10,4 @@
 	}else{
 		alert('first access');
 	}
-
-})();
+});
