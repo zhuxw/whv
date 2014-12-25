@@ -1,4 +1,4 @@
-autoLoad(function(){
+whvutil.autoLoad(function(){
 	var imprison5YearsSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_imprisonment5YearsDropDownList");
 	var imprison12YearsSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_imprisonment12MonthsDropDownList");
 	var removalOrderSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_removalOrderDropDownList");
@@ -10,6 +10,16 @@ autoLoad(function(){
 	var excludedSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_excludedDropDownList");
 	var removedSelect = document.getElementById("ctl00_ContentPlaceHolder1_character_removedDropDownList");
 
-	var nextButton = document.getElementById("ctl00_ContentPlaceHolder1_wizardPageFooter_wizardPageNavigator_nextImageButton");
-	fireEvent(nextButton, 'click');
+	var no = "No";
+	imprison5YearsSelect.value = no;
+	imprison12YearsSelect.value = no;
+	removalOrderSelect.value = no;
+	deportedSelect.value = no;
+	chargedSelect.value = no;
+	convictedSelect.value = no;
+	investigationSelect.value = no;
+	excludedSelect.value = no;
+	removedSelect.value = no;
+
+	return true;
 });

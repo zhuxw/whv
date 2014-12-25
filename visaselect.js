@@ -1,7 +1,6 @@
-autoLoad(function(){
-	alert('visaselect');
+whvutil.autoLoad(function(){
 	var visaSelect = document.getElementById('VisaDropDown');
 	visaSelect.value = "/secure/Login+Working+Holiday.htm";
-
-	fireEvent(visaSelect, 'change');
+	whvutil.fireEvent(visaSelect, 'change');
+//    window.location = "https://www.immigration.govt.nz/secure/Login+Working+Holiday.htm";
 });

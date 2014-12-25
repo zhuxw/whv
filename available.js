@@ -1,6 +1,4 @@
-autoLoad(function(){
-	alert('available');
-
+whvutil.autoLoad(function(){
 	var applyButton = document.getElementById("ctl00_ContentPlaceHolder1_applyNowButton");
-	fireEvent(applyButton, 'click');
+	whvutil.fireEvent(applyButton, 'click');
 });

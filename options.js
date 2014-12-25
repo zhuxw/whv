@@ -1,39 +1,8 @@
 window.onload = function(){
 
-	function getContext(){
-		return {
-			loginname: 'ccschen',
-			loginpwd: 'Passw0rd',
-			country: 214,
-			familyname: 'Chen',
-			givenname: 'Chunsen',
-			gender: 'F',
-			birthday: '1984/12/21',
-			streetname: 'abc',
-			city: 'New York',
-			email: 'zhuxw1984@163.com',
-			passportnumber: '12345678',
-			passportexpire: '2020/1/1',
-			idcarddate: '2014/1/1',
-			traveldate: '2015/7/1',
-			payername: 'Zhang San',
-			cardtype: 'master',
-			creditcardnumber: '12345678',
-			creditcardcode: '789',
-			creditcardexpire: '2020/1/1'
-		};
-	}
-
-	function getEmptyContext(){
-		var context = getContext();
-		for(var name in context){
-			context[name] = '';
-		}
-		return context;
-	}
 
 	function init(){
-		chrome.storage.sync.get(getEmptyContext(), function(context){
+		chrome.storage.sync.get(whvutil.getEmptyContext(), function(context){
 			for(var name in context){
 				var input = document.getElementById(name);
 				if(input.getAttribute('data-type') === 'date'){
@@ -51,7 +20,7 @@ window.onload = function(){
 	}
 
 	window.saveContext = function(){
-		var context = getContext();
+		var context = whvutil.getContext();
 		for(var name in context){
 			var input = document.getElementById(name);
 			var v = input.value;
@@ -73,13 +42,13 @@ window.onload = function(){
 	};
 
 	window.showSample = function(){
-		chrome.storage.sync.set(getContext(), function(){
+		chrome.storage.sync.set(whvutil.getContext(), function(){
 			init();
 		});
 	};
 
 	window.clearContext = function(){
-		chrome.storage.sync.set(getEmptyContext(), function(){
+		chrome.storage.sync.set(whvutil.getEmptyContext(), function(){
 			init();
 		});
 	};

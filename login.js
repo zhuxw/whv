@@ -1,13 +1,10 @@
-autoLoad(function(){
-	alert('login');
-	chrome.runtime.sendMessage('whvcontext', function(response){
-		var userNameInput = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_userNameTextBox");
-		var pwdInput = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_passwordTextBox");
-		var loginBtn = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_loginImageButton");
+whvutil.autoLoad(function(context){
+	var userNameInput = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_userNameTextBox");
+	var pwdInput = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_passwordTextBox");
+	var loginBtn = document.getElementById("OnlineServicesLoginStealth_VisaLoginControl_loginImageButton");
 
-		userNameInput.value = "ccschen";
-		pwdInput.value = "Passw0rd";
+	userNameInput.value = context.loginname;
+	pwdInput.value = context.loginpwd;
 
-		fireEvent(loginBtn, 'click');
-	});
+	whvutil.fireEvent(loginBtn, 'click');
 });
